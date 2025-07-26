@@ -1,0 +1,6 @@
+{
+  "name": "Scraper Inmobiliario - DIEGO FERREYRA - IA",
+  "description": "An intelligent dashboard to discover, analyze, and manage real estate investment opportunities using AI. This application provides a professional dashboard to view, filter, and manage property opportunities, enhanced with AI-driven analysis from the Gemini API.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

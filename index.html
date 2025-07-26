@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boom. | Dashboard Inmobiliario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        /* Base & Text */
+        --bg-primary: #ffffff;
+        --bg-secondary: #f8fafc; /* slate-50 */
+        --bg-tertiary: #f1f5f9; /* slate-100 */
+        --border-primary: #e2e8f0; /* slate-200 */
+        --text-primary: #0f172a; /* slate-900 */
+        --text-secondary: #475569; /* slate-600 */
+        --text-tertiary: #94a3b8; /* slate-400 */
+
+        /* Interactive */
+        --primary-accent: #4f46e5; /* indigo-600 */
+        --primary-accent-hover: #4338ca; /* indigo-700 */
+
+        /* Status Colors (Solid for pills) */
+        --status-new: #6366f1; /* indigo-500 */
+        --status-contacted: #3b82f6; /* blue-500 */
+        --status-visit: #8b5cf6; /* violet-500 */
+        --status-negotiating: #f59e0b; /* amber-500 */
+        --status-acquired: #22c55e; /* green-500 */
+        --status-discarded: #ef4444; /* red-500 */
+        --status-opportunity: #14b8a6; /* teal-500 */
+
+        /* Scrollbar */
+        --scrollbar-track: #f1f5f9;
+        --scrollbar-thumb: #cbd5e1;
+        --scrollbar-thumb-hover: #94a3b8;
+      }
+      body {
+        background-color: var(--bg-secondary);
+        color: var(--text-primary);
+        font-family: 'Inter', sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--scrollbar-track);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--scrollbar-thumb);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--scrollbar-thumb-hover);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^18.2.0/",
+    "react": "https://esm.sh/react@^18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@^18.2.0/",
+    "react-dom/server": "https://esm.sh/react-dom@^18.2.0/server",
+    "@google/genai": "https://esm.sh/@google/genai@^1.10.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.45.0",
+    "leaflet": "https://esm.sh/leaflet@1.9.4",
+    "react-leaflet": "https://esm.sh/react-leaflet@4.2.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50 text-slate-800">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
